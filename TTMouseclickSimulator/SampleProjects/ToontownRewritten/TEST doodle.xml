@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SimulatorProject xmlns="https://github.com/TTExtensions/MouseClickSimulator">
+  <Title>Doodle Training</Title>
+  <Description>
+The Toon will automatically train your doodle in estate.
+Before you click on Start, make sure that
+• you are in your estate,
+• you have your doodle menu open (feed/scratch/call)
+• verify speedchat options (deault assumes you have unite, if you do not have unite then change the 3 to 2
+• choose what trick you want - starting index is 0 (deafult chooses 2nd trick in list)
+  </Description>
+
+  <QuickAction title="Train">
+    <Compound loop="True">
+      <Speedchat menuItems="3, 0, 1"/>
+      <Pause duration="10000" />
+      <DoodlePanel button="Feed"/>
+      <Pause duration="12000" />
+    </Compound>
+  </QuickAction>	
+
+</SimulatorProject>
