@@ -4,7 +4,18 @@ namespace TTMouseClickSimulator.Core.Toontown.Actions;
 
 public static class MouseHelpers
 {
-    public static readonly Size ReferenceWindowSize = new(1600, 1151);
+    public static Size ReferenceWindowSize = new(1600, 1151);
+
+    public static void ChangeReferenceSize(Size newSize)
+    {
+        ReferenceWindowSize = newSize;
+    }
+
+    public static void SetDefaultReferenceSize()
+    {
+        Size newSize = new(1600, 1151);
+        ReferenceWindowSize = newSize;
+    }
 
     public static void DoSimpleMouseClick(
         IInteractionProvider provider,
