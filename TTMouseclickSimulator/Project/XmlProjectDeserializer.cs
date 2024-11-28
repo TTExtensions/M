@@ -45,6 +45,9 @@ public static class XmlProjectDeserializer
         actionTypes.Add("DoodlePanel", typeof(DoodlePanelAction));
 
         actionTypes.Add("PlantFlower", typeof(PlantFlowerAction));
+        actionTypes.Add("PlantTree", typeof(PlantTreeAction));
+        actionTypes.Add("RemoveTree", typeof(RemoveTreeAction));
+        actionTypes.Add("RemovePlant", typeof(RemovePlantAction));
         actionTypes.Add("Water", typeof(WaterAction));
         actionTypes.Add("ConfirmFlowerPlantedDialog", typeof(ConfirmFlowerPlantedDialogAction));
 

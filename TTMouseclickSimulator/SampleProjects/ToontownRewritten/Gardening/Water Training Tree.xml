@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SimulatorProject xmlns="https://github.com/TTExtensions/MouseClickSimulator">
+  <Title>Gardening – 1 Jellybean Combinations</Title>
+  <Description>
+This project plants a cupcake tree and replants to train the watering can. Stand in front of an empty pot.
+  </Description>
+
+  <QuickAction title="Plant farm">
+    <Compound loop="True">
+      <PlantTree />
+      <Pause duration="6200" />
+      <ConfirmFlowerPlantedDialog />
+      <Pause duration="300" />
+      <Water />
+      <Pause duration="3600" />
+      <Water />
+      <Pause duration="3600" />
+      <RemoveTree />
+      <Pause duration="6000" />
+      <Compound type="Sequential" minimumPause="50" maximumPause="300" loop="false">
+        <PressKey key="Down" duration="100" />
+        <Pause duration="100" />
+
+        <PressKey key="Up" duration="100" />
+        <Pause duration="200" />
+      </Compound>
+    </Compound>
+  </QuickAction>
+
+</SimulatorProject>
